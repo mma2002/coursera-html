@@ -1,45 +1,100 @@
-d<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
-<title>Responsive Layout</title>
+<title>Three Laws of Robotics by Isaac Asimov</title>
 <style>
 
 /********** Base styles **********/
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;  
 }
 h1 {
   margin-bottom: 15px;
 }
 
 div {
-  background-color: #00FFFF;
+  background-color: white;
   position: relative;
-  top: 60px;
+  top: 0px;
 }
 
-p {
-  border: 1px solid black;
-  background-color: #A52A2A;
-  width: 90%;
+#container1, #container2, #container3 {
+/*  border: 1px solid black;*/
+  background-color: grey;
+  width: 100%;
   height: 150px;
-  margin-right: auto;
-  margin-left: auto;
+/*  margin-right: auto;
+  margin-left: auto;*/
+  margin-top: 25px;
+/*  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 15px;
+*/  
+ /* margin: 15px;*/
   font-family: Helvetica;
   color: white;
+  position: relative;
+  border: 2px solid black;
+
+}
+
+#base {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+#p11 {
+  background-color: #2b75bf;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  right: 0;
+  width: 20%;
+  height: 20px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#p21 {
+  background-color: #2f873f;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  right: 0;
+  width: 20%;
+  height: 20px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#p31 {
+  background-color: #77276a;
+  position: absolute;
+  text-align: center;
+  top: 0px;
+  right: 0px;
+  width: 20%;
+  height: 20px;
+  border-left: 2px solid black;
+  border-bottom: 2px solid black;
 }
 
 /* Simple Responsive Framework. */
 .row {
   width: 100%;
+  padding: 20px;   
+/*  margin-bottom: 15px;*/
 }
 
+
 /********** Large devices only **********/
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    border: 1px solid green;
+/*    border: 1px solid green;*/
   }
   .col-lg-1 {
     width: 8.33%;
@@ -80,10 +135,10 @@ p {
 }
 
 /********** Medium devices only **********/
-@media (min-width: 950px) and (max-width: 1199px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid green;
+/*    border: 1px solid green;*/
   }
   .col-md-1 {
     width: 8.33%;
@@ -126,12 +181,39 @@ p {
 </style>
 </head>
 <body>
-<h1>Responsive Layout</h1>
+<h1>Three Laws of Robotics by Isaac Asimov</h1>
 
 <div class="row">
-  <div class="col-lg-4 col-md-6"><p>Item 1</p></div>
-  <div class="col-lg-4 col-md-6"><p>Item 2 Wow this is cool</p></div>
-  <div class="col-lg-4 col-md-12"><p>Item 3</p></div>
+  <div class="col-lg-4 col-md-6">
+    <div id="base">
+      <div id="container1">
+        <br>
+        <br>
+        A robot may not injure a human being or, through inaction, allow a human being to come to harm.
+        <div id="p11">Law 1</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6">
+    <div id="base">
+      <div id="container2">
+        <br>
+        <br>
+        A robot must obey the orders given it by human beings except where such orders would conflict with the First Law.
+        <div id="p21">Law 2</div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-12">
+    <div id="base">
+      <div id="container3">
+        <br>
+        <br>
+        A robot must protect its own existence as long as such protection does not conflict with the First or Second Laws.
+        <div id="p31">Law 3</div>
+      </div>
+    </div>
+  </div>
 </div>
 
 </body>
