@@ -32,7 +32,7 @@ div {
   font-family: Helvetica;
   color: white;
   position: relative;
-  border: 2px solid black;
+  border: 1px solid black;
 
 }
 
@@ -49,8 +49,8 @@ div {
   right: 0;
   width: 20%;
   height: 20px;
-  border-left: 2px solid black;
-  border-bottom: 2px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 #p21 {
@@ -61,8 +61,8 @@ div {
   right: 0;
   width: 20%;
   height: 20px;
-  border-left: 2px solid black;
-  border-bottom: 2px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 #p31 {
@@ -73,8 +73,8 @@ div {
   right: 0px;
   width: 20%;
   height: 20px;
-  border-left: 2px solid black;
-  border-bottom: 2px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 /* Simple Responsive Framework. */
