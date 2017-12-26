@@ -5,9 +5,9 @@
   padding: 0;  
 }
 h1 {
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;*/
   text-align: center;
-  padding-top: 25px;
+  padding-top: 45px;
 }
 
 div {
@@ -33,7 +33,7 @@ div {
   color: white;
   position: relative;
   border: 1px solid black;
-
+  overflow: auto;
 }
 
 #base {
